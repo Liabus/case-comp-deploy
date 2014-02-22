@@ -1,0 +1,3 @@
+[submodule "case-comp"]
+	path = case-comp
+	url = https://github.com/Liabus/case-comp.git

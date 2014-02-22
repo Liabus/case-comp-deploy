@@ -1,0 +1,8 @@
+{
+  "name": "case-comp-deploy",
+  "version": "0.0.1",
+  "author": "Liabus",
+  "dependencies": {
+    "express": "~3.4.8"
+  }
+}
