@@ -6,7 +6,7 @@ app.get('/', function(req, res){
     res.send('You have reached the deploy server.');
 });
 
-app.get('/postreceive', function(req, res){
+app.all('/postreceive', function(req, res){
     
     res.send('Triggered code update. Thanks!');
     
