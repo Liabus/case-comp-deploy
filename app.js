@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 var ch = require('child_process');
 
+app.get('/', function(req, res){
+    res.send('You have reached the deploy server.');
+});
 
 app.get('/postreceive', function(req, res){
     
