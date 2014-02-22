@@ -8,14 +8,13 @@ app.get('/', function(req, res){
 
 app.get('/postreceive', function(req, res){
     
-    console.log(req);
+    res.send('Triggered code update. Thanks!');
     
     var child = ch.exec('git submodule -q foreach git pull -q origin master', [], function(err, stdout, stderr) {
         console.log(stdout, stderr); 
         
         var child2 = ch.exec('pm2 restart all', [], function(err, stdout, stderr) {
-            console.log(stdout, stderr); 
-            res.send('Triggered code update. Thanks!');
+            console.log(stdout, stderr);
         });
     });
 });
